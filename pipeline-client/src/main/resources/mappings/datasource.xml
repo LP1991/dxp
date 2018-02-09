@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hlframe.client.data.dao.DatasourceDao">
+	
+	<resultMap id="Datasource" type="com.hlframe.client.data.entity.Datasource" >
+		<result column="ID" property="id" />
+		<result column="NAME" property="name" />
+	    <result column="TYPE" property="type" />
+	    <result column="ACTIVE" property="active" />
+	    <result column="DEPT" property="dept" />
+	    <result column="SERVICE_SYS_NAME" property="serviceSysName" />
+	    <result column="TECH_SUPPORT_NAME" property="techSupportName" />
+	    <result column="CONTACT" property="contact" />
+		<result column="DEL_FLAG" property="delFlag" />
+		<result column="STATUS" property="status" />
+	    <result column="REMARKS" property="remarks" />
+		<result column="SORT_NUM" property="sortNum" />
+	</resultMap>
+
+	<sql id="datasourceColumns">
+		a.ID AS id,
+		a.NAME AS "name",
+		a.TYPE AS "type",
+		a.ACTIVE AS "active",
+		a.DEPT AS "dept",
+		a.SERVICE_SYS_NAME AS "serviceSysName",
+		a.TECH_SUPPORT_NAME AS "techSupportName",
+		a.CONTACT AS "contact",
+		a.DEL_FLAG AS "delFlag",
+		a.STATUS AS "status",
+		a.REMARKS AS "remarks",
+		a.SORT_NUM AS "sortNum"
+	</sql>
+
+	<sql id="datasourceJoins"></sql>
+
+	<select id="get" resultType="Datasource">
+		SELECT
+		<include refid="datasourceColumns"/>
+		FROM datasource a
+		<include refid="datasourceJoins"/>
+		WHERE a.ID = #{id}
+	</select>
+
+
+
+
+</mapper>

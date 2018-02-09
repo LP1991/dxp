@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dxp.iml" filepath="$PROJECT_DIR$/dxp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pipeline-client/pipeline-client.iml" filepath="$PROJECT_DIR$/pipeline-client/pipeline-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pipeline-manager/pipeline-manager.iml" filepath="$PROJECT_DIR$/pipeline-manager/pipeline-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pipelinecore/pipelinecore.iml" filepath="$PROJECT_DIR$/pipelinecore/pipelinecore.iml" />
+    </modules>
+  </component>
+</project>

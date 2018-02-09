@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pipeline-manager:war">
+    <output-path>$PROJECT_DIR$/pipeline-manager/target</output-path>
+    <root id="archive" name="pipeline-manager.war">
+      <element id="artifact" artifact-name="pipeline-manager:war exploded" />
+    </root>
+  </artifact>
+</component>

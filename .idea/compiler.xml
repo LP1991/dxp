@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pipe-core" />
+        <module name="pipeline-client" />
+        <module name="pipeline-manager" />
+        <module name="pipelineclient" />
+        <module name="pipelinecore" />
+        <module name="pipelinemanager" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="dxp" target="1.5" />
+      <module name="pipe-core" target="1.8" />
+      <module name="pipeline-client" target="1.8" />
+      <module name="pipeline-core" target="1.8" />
+      <module name="pipeline-manager" target="1.8" />
+      <module name="pipelineclient" target="1.8" />
+      <module name="pipelinecore" target="1.5" />
+      <module name="pipelinemanager" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
